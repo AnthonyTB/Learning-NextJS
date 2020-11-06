@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
-const Page = () => (
-  <div>
-    <h1>Note Index Path</h1>
-    <Link href="/notes/[id]" as={`/notes/1`}>
-      Note 1
-    </Link>
+export default () => (
+  <div sx={{ height: `calc(100vh - 60px)` }}>
+    <div
+      sx={{
+        variant: "containers.page",
+        display: "flex",
+        alignItems: "center",
+        height: "100%",
+      }}
+    >
+      <h1 sx={{ fontSize: 8, my: 0 }}>Note taking app</h1>
+    </div>
   </div>
 );
